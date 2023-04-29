@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+
 const nodemailer = require("nodemailer");
 var path = require("path");
 require("dotenv").config();
@@ -8,6 +9,7 @@ const app = express();
 
 // Use the body-parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
+
 
 // Serve the HTML form
 app.get("/", (req, res) => {
